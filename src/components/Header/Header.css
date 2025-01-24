@@ -1,0 +1,34 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  0 20rem 0 20rem;
+    background: linear-gradient(to bottom, green, rgb(0, 71, 0));
+    color: white;
+    height: 5rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .header-left h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  .header-right{
+    padding-bottom: 0.5rem;
+  }
+
+  .header-right a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1.2rem;
+    transition: color o.3s;
+  }
+  
+  .header-right a:hover {
+    color: #d4d4d4;
+  }
+  
