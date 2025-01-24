@@ -13,7 +13,7 @@ const Equipments = () => {
           <div className="equipment-content">
             <h3>Scanner 3D</h3>
             <p>
-              Equipamento avançado para capturar digitalizações precisas de objetos em 3D, 
+              Equipamento avançado para capturar digitalizações precisas de objetos em 3D,
               ideal para projetos de engenharia reversa e metrologia.
             </p>
           </div>

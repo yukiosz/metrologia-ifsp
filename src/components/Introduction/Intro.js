@@ -1,5 +1,5 @@
 import React from "react";
-import styles from './Intro.css';
+import './Intro.css';
 import revEng from "../../assets/revEng.png";
 
 function Intro() {
