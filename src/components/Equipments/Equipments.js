@@ -1,5 +1,6 @@
 import React from 'react';
 import './Equipments.css';
+import atosq from "../../assets/atos-q.avif";
 
 const Equipments = () => {
   return (
@@ -8,7 +9,7 @@ const Equipments = () => {
       <div className="equipments-grid">
         <div className="equipment-card">
           <div className="equipment-image">
-            <img src="scanner3d.jpg" alt="Scanner 3D" />
+            <img src = {require("../../assets/atos-q.avif")} alt="Scanner 3D" />
           </div>
           <div className="equipment-content">
             <h3>Scanner 3D</h3>
@@ -20,7 +21,7 @@ const Equipments = () => {
         </div>
         <div className="equipment-card">
           <div className="equipment-image">
-            <img src="cmm.jpg" alt="Software de Análise de scans" />
+            <img src={require("../../assets/engineering.jpg")} alt="Software de Análise de scans" />
           </div>
           <div className="equipment-content">
             <h3>Software para geração de relatórios completos</h3>
@@ -31,7 +32,7 @@ const Equipments = () => {
         </div>
         <div className="equipment-card">
           <div className="equipment-image">
-            <img src="printer3d.jpg" alt="Impressora 3D" />
+            <img src={require("../../assets/printer.jpg")} alt="Impressora 3D" />
           </div>
           <div className="equipment-content">
             <h3>Impressora 3D</h3>
