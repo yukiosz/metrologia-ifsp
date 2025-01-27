@@ -1,6 +1,5 @@
 import React from 'react';
 import './Equipments.css';
-import atosq from "../../assets/atos-q.avif";
 
 const Equipments = () => {
   return (

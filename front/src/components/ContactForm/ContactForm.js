@@ -9,6 +9,15 @@ function ContactForm() {
 
   function sendEmail(e){
     e.preventDefault();
+
+    fetch("http://localhost:5000/send-email", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name, email, phone, message }),
+    })
+      .then((response) => response.text())
+      .then((data) => alert(data))
+      .catch((error) => console.error("Erro:", error));    
     
   }
 
@@ -37,7 +46,7 @@ function ContactForm() {
 
             <div className="form-group">
             <label htmlFor="message">Mensagem</label>
-            <textarea id="message" name="message" placeholder="Escreva sua mensagem" rows="4" onChange={(e) => setMessage(e.target.value)} required></textarea>
+            <textarea id="message" name="message" placeholder="Escreva sua mensagem" rows="4" maxLength="2000" onChange={(e) => setMessage(e.target.value)} required></textarea>
             </div>
 
             <button type="submit" className="submit-button">Enviar</button>
