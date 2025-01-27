@@ -1,21 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.css';
 
-function Header(){
-    return(
-        <>
-            <header className="header">
+function Header() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen); // Alterna o estado do menu
+    };
+
+    return (
+        <header className="header">
             <div className="header-left">
                 <h1>Metrologia IFSP</h1>
             </div>
-            <nav className="header-right">
+            <div className={`header-right ${isMenuOpen ? 'active' : ''}`}>
                 <a href="#services">Serviços</a>
                 <a href="#equipments">Equipamentos</a>
                 <a href="#contact">Contato</a>
-            </nav>
-            </header>
-        </>
-    )
+            </div>
+            <div className="menu-icon" onClick={toggleMenu}>
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
+            </div>
+        </header>
+    );
 }
 
 export default Header;

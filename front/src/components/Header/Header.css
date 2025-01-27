@@ -1,34 +1,70 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding:  0 20rem 0 20rem;
-    background: linear-gradient(to bottom, green, rgb(0, 71, 0));
-    color: white;
-    height: 5rem;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-  }
-  
-  .header-left h1 {
-    margin: 0;
-    font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background: linear-gradient(to bottom, green, rgb(0, 71, 0));
+  color: white;
+  height: 5rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.header-left h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  padding-bottom: 0.5rem;
+}
+
+.header-right a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.header-right a:hover {
+  color: #d4d4d4;
+}
+
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-icon .bar {
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .header-right {
+      display: none;
+      width: 100%;
+      background: rgba(0, 71, 0, 0.9);
+      position: absolute;
+      top: 5rem;
+      left: 0;
+      padding: 20px;
+      text-align: center;
+      border-radius: 5px;
   }
 
-  .header-right{
-    padding-bottom: 0.5rem;
+  .header-right.active {
+      display: block;
   }
 
-  .header-right a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    font-size: 1.2rem;
-    transition: color o.3s;
+  .menu-icon {
+      display: flex;
   }
-  
-  .header-right a:hover {
-    color: #d4d4d4;
-  }
-  
+}
