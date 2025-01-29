@@ -20,10 +20,12 @@ app.post("/send-email", async (req, res) => {
   const mailOptions = {
     from: email,
     to: "rafael.shiraishi@ifsp.edu.br",
+    cc: email,
     subject: `Contato pelo site de Metrologia IFSP`,
     html: `
     <h3><strong>Mensagem de Contato</strong></h3>
     <p><strong>Nome:</strong> ${name}</p>
+    <p><strong>Email:</strong> ${email}</p>
     <p><strong>Telefone:</strong> ${phone}</p>
     <p><strong>Mensagem:</strong><br/>${message}</p>
   `,
