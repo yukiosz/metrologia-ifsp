@@ -5,7 +5,7 @@ import Services from '../components/Services/Services';
 import Footer from '../components/Footer/Footer';
 import Equipments from '../components/Equipments/Equipments';
 import Intro from '../components/Introduction/Intro'
-import ContactForm from '../components/ContactForm/ContactForm';
+import Contact from "../components/Contact/Contact";
 
 function Home() {
     return(
@@ -14,7 +14,7 @@ function Home() {
             <Intro />
             <Services />
             <Equipments />
-            <ContactForm />
+            <Contact />
             <Footer />
         </>
     )

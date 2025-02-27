@@ -1,5 +1,5 @@
 .services-section {
-    padding: 50px 20px;
+    padding: 50px 10px;
     background-color: #f9f9f9;
     text-align: center;
   }
@@ -13,12 +13,15 @@
   .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
+    gap: 10px;
+    max-width: 1800px;
     margin: 0 auto;
   }
   
   .service-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -43,5 +46,19 @@
     font-size: 1rem;
     color: #555;
     line-height: 1.5;
+    margin-bottom: 10px;
   }
   
+  .service-card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 5px;
+  }
+
+  .small-image {
+    width: 50%;
+    max-width: 200px;
+    height: auto;
+  }

@@ -11,11 +11,11 @@ function Header() {
     return (
         <header className="header">
             <div className="header-left">
-                <h1>Metrologia IFSP</h1>
+                <a className='titleHeader' href="#">METROLOGIA ÓPTICA IFSP</a>
             </div>
             <div className={`header-right ${isMenuOpen ? 'active' : ''}`}>
                 <a href="#services">Serviços</a>
-                <a href="#equipments">Equipamentos</a>
+                <a href="#equipments">Equipamento</a>
                 <a href="#contact">Contato</a>
             </div>
             <div className="menu-icon" onClick={toggleMenu}>
