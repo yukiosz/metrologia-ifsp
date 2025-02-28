@@ -5,7 +5,7 @@ function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen); // Alterna o estado do menu
+        setIsMenuOpen(!isMenuOpen);
     };
 
     return (

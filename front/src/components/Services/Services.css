@@ -4,13 +4,13 @@
     text-align: center;
   }
   
-  .section-title {
+.section-title {
     font-size: 2rem;
     color: darkgreen;
     margin-bottom: 30px;
   }
   
-  .services-grid {
+.services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 10px;
@@ -18,7 +18,7 @@
     margin: 0 auto;
   }
   
-  .service-card {
+.service-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,25 +31,25 @@
     transition: transform 0.3s, box-shadow 0.3s;
   }
   
-  .service-card:hover {
+.service-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   }
   
-  .service-card h3 {
+.service-card h3 {
     font-size: 1.5rem;
     color: darkgreen;
     margin-bottom: 15px;
   }
   
-  .service-card p {
+.service-card p {
     font-size: 1rem;
     color: #555;
     line-height: 1.5;
     margin-bottom: 10px;
   }
   
-  .service-card img {
+.service-card img {
     max-width: 100%;
     height: auto;
     display: block;
@@ -57,8 +57,61 @@
     border-radius: 5px;
   }
 
-  .small-image {
+.small-image {
     width: 50%;
     max-width: 200px;
     height: auto;
   }
+
+.carousel-image {
+    max-width: 100%;
+    max-height: 600px;
+    object-fit: contain;
+  }
+
+.carousel .control-arrow {
+    background-color: rgba(0, 100, 0, 0.5);
+  }
+  
+.carousel .control-arrow:hover {
+    background-color: rgba(0, 100, 0, 0.8);
+  }
+
+.carousel .dot {
+    background: rgb(124, 124, 124) !important;
+  }
+  
+.carousel .dot.selected {
+    background: darkgreen !important;
+  }
+
+.carousel-item {
+  max-width: 100%;
+  max-height: 600px;
+  object-fit: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ 
+.carousel .legend {
+  position: relative !important;
+  bottom: 0 !important;
+  margin-top: 10px;
+}
+.carousel .control-dots {
+  position: relative !important;
+  bottom: 5px;
+}
+
+@media (min-width: 1000px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1000px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
