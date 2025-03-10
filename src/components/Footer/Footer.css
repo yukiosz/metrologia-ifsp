@@ -1,6 +1,14 @@
 .footer{
+    display: flex;
+    flex-direction: column;
     text-align: center;
     padding: 10px 20px;
     background: linear-gradient(to right, green, darkgreen);
     color: white;
+}
+
+.footer a{
+    color: white;
+    text-decoration: none;
+    margin: 1rem;
 }

@@ -18,6 +18,7 @@ function  Equipments(){
             <p>
             O ATOS Q oferece a capacidade de realizar medições em uma vasta gama de materiais, como peças de chapa metálica, componentes fundidos, cerâmicas, polímeros e vidro, entre outros. O sistema é equipado com um conjunto de lentes que possibilita a medição de áreas variando de 100 x 70 mm² a 500 x 370 mm². Com uma precisão excepcional de até 0,008 mm, o ATOS Q   garante a excelência na medição de peças e componentes com alto nível de detalhe e confiança.
             </p>
+            <p>Saiba mais acessando o <a href='https://www.zeiss.com/metrology/en/systems/optical-3d/3d-scanning/atos/atos-q.html' target='_blank'>link do Atos Q no site da ZEISS</a></p>
           </div>
         </div>
         </div>
