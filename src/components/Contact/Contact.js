@@ -20,7 +20,7 @@ function Contact() {
             <div>
               <FaEnvelope className="info-icon" />
               <h3>EMAIL</h3>
-              <p>ifmaker.bra@ifsp.edu.br</p>
+              <p>metrologiaoptica.bra@ifsp.edu.br</p>
             </div>
           </div>
         </div>

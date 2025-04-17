@@ -5,7 +5,7 @@ import Home from './pages/Home';
 
 function Rotas() {
   return(
-      <BrowserRouter>
+      <BrowserRouter basename="/metrologiaoptica">
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
